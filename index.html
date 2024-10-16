@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Gael Nevarez</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><button onclick="window.location.href='#hero'">Home</button></li>
+                <li><button onclick="window.location.href='#about'">About me</button></li>
+                <li><button onclick="window.location.href='#projects'">Projects</button></li>
+                <li><button onclick="window.location.href='#contact'">Contact</button></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <main>
+
+        <section id="hero">
+            <h1>Gael Alejandro Nevarez Mendivil</h1>
+            <h2>Estudiante en Ingeniería en sistemas de información</h2>
+            <img src="./imagenes/yo, el papu.jpg" class="profile-pic">
+        </section>
+
+        <section id="about">
+            <h2>Acerca de mí</h2>
+            <p>Actualmente estoy estudiando en la Universidad de Sonora, plantel Hermosillo. Estoy en quinto semestre de
+                la carrera Ingeniería en Sistemas de Información.
+                <br>
+                Me gusta estar constantemente aprendiendo sobre nuevas tecnologías. Los primeros tres semestres de la
+                carrera
+                realicé varios proyectos hechos en el lenguaje Java.
+                <br>La mayoría de ellos apoyados con bases de datos SQL.
+                En semestres posteriores aprendí a usar los lenguajes Python, PHP y JavaScript.
+                <br>
+                <br>
+                La mayoría de proyectos que he realizado han sido en equipo. Varias veces he tomado el rol de líder.
+                Por lo que he desarrollado experiencia en dar instrucciones para llegar al resultado deseado.
+                Al comunicar correctamente mis ideas, facilita el trabajo que mis compañeros y yo realizamos.
+                <br> Si hay algo que no entienden siempre se los explico para que no existan problemas durante el
+                desarrollo.
+            </p>
+
+            <div class="skills-container">
+                <div class="softskills">
+                <h3>Softskills</h3>
+                <ul>
+                    <li>Liderazgo</li>
+                    <li>Comunicación asertiva</li>
+                    <li>Planificación y gestión de proyectos</li>
+                    <li>Resolución de problemas</li>
+                    <li>Compromiso de objetivos</li>
+                    <li>Trabajo en equipo</li>
+                </ul>
+            </div>
+
+            <div class="languages">
+                <h3 id="language">Idiomas</h3>
+                <div class="language">
+                    <p>Español</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="language">
+                    <p>Inglés</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="language">
+                    <p>Alemán</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 10%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        </section>
+
+        <section id="projects">
+            <h2>Proyectos Académicos</h2>
+            <div class="projects-list">
+                <div class="project-details">
+                    <img src="./imagenes/lachinita.jpg">
+                    <h3>Gestor de inventario</h3>
+                    <p>Un gestor de inventario y usuarios para una juguetería de nombre "La Chinita".
+                        <br>Se hizo en el lenguaje de programación Java y se utilizo una base de datos en SQL. Se pueden
+                        administrar usuarios dependiendo de sus roles, al igual que sus juguetes.
+                    </p>
+                    <a href="https://github.com/gol505/Desarrollo-de-Sistemas-2">La Chinita</a>
+                </div>
+
+                <div class="project-details">
+                    <img src="./imagenes/breakoutgame.jpg">
+                    <h3>Videojuego Breakout</h3>
+                    <p>Una recreación del videojuego de Atari 2600.
+                        <br>Hecho en el lenguaje Java con controles adaptados a teclado, además de poder aumentar la
+                        velocidad en la que la bola se mueve.
+                    </p>
+                    <a target="_blank" href="https://github.com/GaelANM999/Breakout_Game.git">Breakout</a>
+                </div>
+
+                <div class="project-details">
+                    <img src="./imagenes/sistemaescolar2.jpg">
+                    <h3>Sistema Escolar</h3>
+                    <p>Una página que sirve como un Portal de Universidad.
+                        <br>Tiene roles de Profesoras, administrativos y alumnos. Los alumnos pueden ver las opciones de
+                        carreras disponibles e inscribirse a una sola carrera.
+                    </p>
+                    <a href="https://github.com/GaelANM999/Breakout_Game.git">Página de sistema escolar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contáctame</h2>
+            <form>
+                <div>
+                    <label>Nombre</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Asunto</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Mensaje</label>
+                    <textarea placeholder="Escriba su mensaje"></textarea>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>gaelnevarezm@gmail.com</h3>
+        <h3>+52 662 239 5364</h3>
+        <h3><a href="https://github.com/GaelANM999" target="_blank">GitHub</a></h3>
+        <h3><a href="https://youtu.be/Iasj-Bp7ld8" target="_blank">Videocurrículum</a></h3>
+        <h3><a href="https://www.linkedin.com/in/gael-alejandro-nevarez-mendivil-0490a7333/"
+                target="_blank">LinkedIn</a></h3>
+
+        <div class="download-cv">
+            <a href="./docs/Currículum Vitae CV de Gael Nevarez.pdf" download>
+                <button>Descargar CV</button>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
