@@ -6,10 +6,23 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
 }
 
 section {
-    padding: 50px 0;
+    padding: 8vh 5vw;
 }
 
 section#hero {
@@ -27,37 +40,38 @@ section#hero {
 
 h1 {
     font-size: 3rem;
-    background-color: black; /* Fondo negro para el texto */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
+    background-color: black; 
+    color: white; 
+    padding: 1vw; 
+    border-radius: 1rem; 
 }
 
 section#hero h2 {
     text-transform: uppercase;
-    background-color: black; /* Fondo negro para el texto */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
+    background-color: black; 
+    color: white; 
+    padding: 1vw; 
+    border-radius: 1rem; 
 }
 
 h2 {
+    color: white;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 30px;
 }
 
 .profile-pic {
-    width: 150px; /* Ajusta el tamaño de la imagen */
-    height: 150px; /* La altura debe ser igual al ancho para que sea un círculo */
-    border-radius: 50%; /* Hace que la imagen tenga forma circular */
-    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del círculo */
-    margin-top: 20px; /* Añade algo de espacio entre el título y la imagen */
-    border: 5px solid lightseagreen; /* Borde opcional para darle estilo */
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-top: 20px; 
+    border: 5px solid lightseagreen; 
 }
 
-section#about h1{
-    background-color: floralwhite;
+section#about h2, section#about p{
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
@@ -65,20 +79,10 @@ section#about h1{
     text-align: center;
     margin-right: 30px;
     margin-left: 30px;
-}
-
-section#about p{
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
-    align-items: center;
-    text-align: center;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-bottom: 1px;
 }
 
 section#about h3{
+    color: white;
     margin-top: 15px;
     margin-left: 0px;
     margin-bottom: 15px;
@@ -86,6 +90,7 @@ section#about h3{
 }
 
 section#about h3#language{
+    color: white;
     margin-top: 15px;
     margin-left: 0px;
     margin-bottom: 15px;
@@ -102,16 +107,16 @@ section#about h3#language{
 }
 
 .skills-container {
-    display: flex;              
+    display: flex;            
     justify-content: space-between;  
-    gap: 30px;                  
-    max-width: 1200px;          
+    gap: 20px;                  
+    max-width: 1000px;          
     margin: 0 auto;             
 }
 
 .softskills, .languages {
     width: 100%; 
-    max-width: 600px;
+    max-width: 60%;
 }
 
 .softskills ul {
@@ -121,12 +126,12 @@ section#about h3#language{
 }
 
 .softskills ul li {
+    color: white;
     margin-bottom: 10px;
     text-align: left;
 }
 
-/* Estilos para las barras de progreso */
-.languages .language {
+.languages .language .techskills {
     margin-bottom: 20px;
 }
 
@@ -144,21 +149,61 @@ section#about h3#language{
     border-radius: 10px;
 }
 
+.techskills{
+    width: 100%;
+    max-width: 60%;
+}
+
+.techskills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.techskills ul li {
+    color: white;
+    margin-bottom: 10px;
+    text-align: left;
+}
 
 .projects-list {
     display: flex;
-    flex-direction: row; 
-    flex-wrap: nowrap;   
+    flex-wrap: wrap;   
     overflow-x: auto;   
     justify-content: center;
-    gap: 20px;           
+    gap: 20px;          
 }
 
 .project-details {
-    
+    width: 100%;
     width: 400px;
+    padding: auto;
     flex-shrink: 0; 
+    border: 0.2vw solid black; 
+    background-color: rgba(71, 61, 139, 0.377);
+    padding: 20px; 
+    margin-right: 20px; 
 }
+
+.project-details:last-child {
+    border-right: none; 
+}
+
+section#projects {
+    padding: 1vw 0; 
+    color: white; 
+}
+
+section#projects h2{
+        border-bottom: 2px solid black;
+        padding: 2vw 0;
+        text-align: center;
+}
+
+section#projects a{
+    color: blue;
+}
+
 
 .project-details img {
     border: 5px solid lightseagreen;
@@ -168,10 +213,12 @@ section#about h3#language{
 }
 
 .project-details h3 {
+    color: white;
     margin-bottom: 15px;
 }
 
 .project-details p {
+    color: white;
     margin-bottom: 5px;
     display: flex;
     justify-content:center;
@@ -180,9 +227,9 @@ section#about h3#language{
 header {
     position: sticky;
     top: 0;
-    padding-top: 30px;
+    padding-top: 5vh;
     padding-bottom: 30px;
-    background-color: aqua;
+    background-color: rgb(17, 7, 56);
     z-index: 1000; 
 }
 
@@ -199,7 +246,7 @@ nav ul li {
 
 nav ul li button {
     padding: 10px 20px;
-    background-color: blue;
+    background-color: darkslateblue;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -212,17 +259,26 @@ nav ul li button:hover {
 }
 
 nav ul li button:active {
-    background-color: darkseagreen;
+    background-color: darkslateblue;
 }
 
 
 section#contact {
-    padding: 50px 0;
-    background-color: #f9f9f9;
+    padding: 50px 30vw;
+    background-color: black;
     min-height: 50vh; 
 }
 
+section#contact h2{
+    color: white; 
+}
+
 form {
+    background-color: rgba(211, 211, 211, 0.39);
+    padding: auto;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,33 +294,31 @@ form div {
 
 button {
     padding: 10px 20px;
-    background-color: lightseagreen;
+    background-color: darkslateblue;
     border: none;
     color: white;
     cursor: pointer;
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    align-items: center;
-    background-color: aqua;
-    padding: 30px;
+    background-color: rgb(17, 7, 56);
+    padding: 20px 5vw;
+    text-align: center;
 }
 
-footer h3 {
+footer h3, footer a {
+    color: #e0e0e0;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .download-cv {
-    margin-left: auto; 
+    margin-top: 20px; 
 }
 
 .download-cv button {
     padding: 10px 20px;
-    background-color: lightseagreen;
+    background-color:darkslateblue;
     border: none;
     color: white;
     cursor: pointer;
@@ -273,4 +327,51 @@ footer h3 {
 
 .download-cv button:hover {
     background-color: darkseagreen;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    section#hero h2 {
+        font-size: 1rem;
+    }
+
+    .skills-container {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .softskills, .languages {
+        max-width: 100%; 
+    }
+
+    .projects-list {
+        flex-direction: column; 
+    }
+
+    .project-details {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    section#hero h2 {
+        font-size: 0.9rem;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+    }
 }

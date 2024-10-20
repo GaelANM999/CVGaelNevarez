@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Gael Nevarez</title>
     <link rel="stylesheet" href="./styles.css">
+    <script defer src="app.js"></script>
 </head>
 
 <body>
@@ -23,13 +24,13 @@
     </header>
     <main>
 
-        <section id="hero">
+        <section id="hero" class="hidden">
             <h1>Gael Alejandro Nevarez Mendivil</h1>
             <h2>Estudiante en Ingeniería en sistemas de información</h2>
             <img src="./imagenes/yo, el papu.jpg" class="profile-pic">
         </section>
 
-        <section id="about">
+        <section id="about" class="hidden">
             <h2>Acerca de mí</h2>
             <p>Actualmente estoy estudiando en la Universidad de Sonora, plantel Hermosillo. Estoy en quinto semestre de
                 la carrera Ingeniería en Sistemas de Información.
@@ -50,45 +51,60 @@
 
             <div class="skills-container">
                 <div class="softskills">
-                <h3>Softskills</h3>
-                <ul>
-                    <li>Liderazgo</li>
-                    <li>Comunicación asertiva</li>
-                    <li>Planificación y gestión de proyectos</li>
-                    <li>Resolución de problemas</li>
-                    <li>Compromiso de objetivos</li>
-                    <li>Trabajo en equipo</li>
-                </ul>
+                    <h3>Softskills</h3>
+                    <ul>
+                        <li>Liderazgo</li>
+                        <li>Comunicación asertiva</li>
+                        <li>Planificación y gestión de proyectos</li>
+                        <li>Resolución de problemas</li>
+                        <li>Compromiso de objetivos</li>
+                        <li>Trabajo en equipo</li>
+                    </ul>
+                </div>
+
+                <div class="languages">
+                    <h3 id="language">Idiomas</h3>
+                    <div class="language">
+                        <p>Español</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="language">
+                        <p>Inglés</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="language">
+                        <p>Alemán</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 10%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="techskills">
+                    <h3>Habilidades técnicas</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>Cisco Packet Tracer</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="languages">
-                <h3 id="language">Idiomas</h3>
-                <div class="language">
-                    <p>Español</p>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 100%;"></div>
-                    </div>
-                </div>
-
-                <div class="language">
-                    <p>Inglés</p>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 80%;"></div>
-                    </div>
-                </div>
-
-                <div class="language">
-                    <p>Alemán</p>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 10%;"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
         </section>
 
-        <section id="projects">
+        <section id="projects" class="hidden">
             <h2>Proyectos Académicos</h2>
             <div class="projects-list">
                 <div class="project-details">
@@ -123,7 +139,7 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="hidden">
             <h2>Contáctame</h2>
             <form>
                 <div>
